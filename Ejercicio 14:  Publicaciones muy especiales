@@ -1,0 +1,14 @@
+let hiloDeEjemplo = [
+{ apodo: "jor", mensaje: "Aguante la ciencia ficción" },
+{ apodo: "tere", mensaje: "A mi no me gusta mucho" },
+{ apodo: "jor", mensaje: "¡Lee fundación!" }]
+
+function publicacionesCortasDelHilo(apodo,hilo){
+  let hilosCortos = [];
+  for (let hilos of hilo){
+    if (hilo.apodo==apodo && longitud(hilo.mensaje<20)){
+      agregar(hilosCortos,hilo)
+    }
+  }
+  return hilosCortos;
+}
